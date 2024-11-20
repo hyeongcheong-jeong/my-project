@@ -1,4 +1,4 @@
-fsd 설계 방법론
+fsd 설계 방법론, 아토믹
 
 layer, slices, segments
 
@@ -24,3 +24,5 @@ slice:
 segments : ui, model, api, lib
 
 <Shared.Button onClick={forkFeature.api.fork} icon={shared.icon.fork} data={forkEntitiy.model.forkCount} />
+
+CRLF
