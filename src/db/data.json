@@ -1,0 +1,61 @@
+{
+  "title": "단어장 만들기",
+  "days": [
+    {
+      "id": 1,
+      "today": 1
+    },
+    {
+      "id": 2,
+      "today": 2
+    },
+    {
+      "id": 3,
+      "today": 3
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "home",
+      "kor": "단어의 대한 설명 1",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "eng": "react",
+      "kor": "단어의 대한 설명 2",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 2,
+      "eng": "vue",
+      "kor": "단어의 대한 설명 3",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 2,
+      "eng": "ork",
+      "kor": "단어의 대한 설명 4",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "day": 3,
+      "eng": "object",
+      "kor": "단어의 대한 설명 5",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "day": 4,
+      "eng": "and",
+      "kor": "단어의 대한 설명 6",
+      "isDone": false
+    }
+  ]
+}
