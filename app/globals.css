@@ -22,3 +22,9 @@
 @layer components {}
 
 @layer utilities {}
+
+@media (max-width: 640px) {
+  h1 {
+    @apply text-xl;
+  }
+}

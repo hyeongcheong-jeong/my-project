@@ -1,8 +1,9 @@
 
 export default function Home() {
+  const texts = ['hello', 'world'].map((text, index) => <p key={index}>{text}</p>)
   return (
     <main>
-     <h1>폰트 타일윈드 적용되니???</h1>
+      { texts }
     </main>
   );
 }
