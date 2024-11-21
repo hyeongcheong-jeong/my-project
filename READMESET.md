@@ -37,3 +37,11 @@ combineSlices(): 여러 슬라이스를 단일 리듀서로 결합하고 초기�
 createAsyncThunk: 작업 유형 문자열과 약속을 반환하는 함수를 수락하고 pending/fulfilled/rejected해당 약속에 따라 작업 유형을 전송하는 thunk를 생성합니다.
 createEntityAdapter: 저장소에서 정규화된 데이터를 관리하기 위해 재사용 가능한 리듀서 및 선택기 세트를 생성합니다.
 사용 편의성을 위해 Reselect 라이브러리 의 유틸리티 createSelector를 다시 내보냈습니다.
+
+
+typescript
+
+interface User {
+  name: string,
+  gender?: string //optional
+}
