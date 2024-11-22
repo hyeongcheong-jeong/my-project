@@ -4,6 +4,9 @@
   list-style: none;
   text-decoration: none;
   color: #333;
+  background: none;
+  outline: none;
+  border: none;
 }
 dl {
   padding: 10px 20px;
@@ -61,4 +64,45 @@ nav {
     width: 200px;
     height: 60px;
   }
+  .current {
+    background: #ccc;
+  }
+}
+button {
+  display: flex;
+  width: 80px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  background: #0000ff;
+  color: #fff;
+}
+button + button {
+  margin-left: 12px;
+  background: #ff0000;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  tr {
+    td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+  }
+  .done {
+    background: #ccc;
+    opacity: .7;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex.right {
+  justify-content: flex-end;
+  margin-right: 20px;
 }

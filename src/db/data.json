@@ -16,45 +16,52 @@
   ],
   "words": [
     {
-      "id": 1,
+      "id": "1",
       "day": 1,
-      "eng": "home",
+      "eng": "app",
       "kor": "단어의 대한 설명 1",
-      "isDone": false
+      "isDone": true
     },
     {
-      "id": 2,
+      "id": "2",
       "day": 1,
-      "eng": "react",
+      "eng": "jhc",
       "kor": "단어의 대한 설명 2",
       "isDone": false
     },
     {
-      "id": 3,
+      "id": "3",
       "day": 2,
       "eng": "vue",
       "kor": "단어의 대한 설명 3",
       "isDone": false
     },
     {
-      "id": 4,
+      "id": "4",
       "day": 2,
       "eng": "ork",
       "kor": "단어의 대한 설명 4",
       "isDone": false
     },
     {
-      "id": 5,
+      "id": "5",
       "day": 3,
       "eng": "object",
       "kor": "단어의 대한 설명 5",
       "isDone": false
     },
     {
-      "id": 6,
-      "day": 4,
+      "id": "6",
+      "day": 3,
       "eng": "and",
       "kor": "단어의 대한 설명 6",
+      "isDone": false
+    },
+    {
+      "id": "3637",
+      "eng": "home",
+      "kor": "집",
+      "day": "2",
       "isDone": false
     }
   ]
