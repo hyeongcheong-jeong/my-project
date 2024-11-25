@@ -1,8 +1,10 @@
 import UsegetWord from "../hooks/UsegetWord"
-import { useRef } from "react"
-
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 export default function CreateWord() {
   let days = UsegetWord('http://localhost:3001/days');
+  const history = useNavigate();
+  console.log(history)
   function onSubmit(e) {
     e.preventDefault();
     console.log(korVal.current.value);
@@ -24,6 +26,7 @@ export default function CreateWord() {
     .then(res => {
       if(res.ok) {
         alert('단어가 생성되었습니다.');
+        history(`/days/${dayVal.current.value}`);
       }
     })
   }

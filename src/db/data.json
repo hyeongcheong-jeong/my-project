@@ -2,15 +2,15 @@
   "title": "단어장 만들기",
   "days": [
     {
-      "id": 1,
+      "id": "1",
       "today": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "today": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "today": 3
     }
   ],
@@ -62,6 +62,20 @@
       "eng": "home",
       "kor": "집",
       "day": "2",
+      "isDone": false
+    },
+    {
+      "id": "e946",
+      "eng": "homless",
+      "kor": "홈리스",
+      "day": "3",
+      "isDone": false
+    },
+    {
+      "id": "ecb1",
+      "eng": "grate",
+      "kor": "그레잇!",
+      "day": "1",
       "isDone": false
     }
   ]

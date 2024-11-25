@@ -7,6 +7,7 @@ import CreateWord from "./components/CreateWord";
 import { useState } from 'react';
 function App() {
   const [name, setName] = useState();
+  useState([name, setName])
   return (
     <div className="App">
       <BrowserRouter>
