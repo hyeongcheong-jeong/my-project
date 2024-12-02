@@ -2,20 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
 }
 
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    @apply text-base;
+  }
   .app {
     @apply px-8;
   }
   h1 {
     @apply text-2xl;
+  }
+  header {
+    @apply px-8;
+  }
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  th {
+    background: #ccc;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+  }
+  td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
   }
 }
 

@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write --cache .",
+    "server": "json-server --watch ./db/data.json --port 3001",
     "lint": "next lint"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
+    "axios": "^1.7.8",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",

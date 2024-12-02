@@ -1,7 +1,16 @@
-import { configureStore } from "@reduxjs/toolkit";
+import modalReducer from "@/redux/modalReducer";
+import wordData from "@/redux/wordData";
+import getDays from "@/redux/DayData";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+
+const rootReducer = combineReducers({
+  modalReducer,
+  wordData,
+  getDays,
+})
 
 const store = configureStore({
-  reducer: {}
+  reducer: rootReducer
 })
 
 //외부 컴포넌트에서 store의 state와 dispathc를 사용하기 위해서는 아래와 같이 타입을 지정해 주어야 한다

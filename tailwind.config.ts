@@ -15,4 +15,6 @@ export default {
     },
   },
   plugins: [],
+  // calc를 사용할 수 있게 만들어줌
+  mode: "jit",
 } satisfies Config;
