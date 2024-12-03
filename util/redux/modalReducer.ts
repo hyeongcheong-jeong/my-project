@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Modal } from "@/types/study";
+import { Modal } from "@/util/types/study";
 
 const initialState:Modal = {
   isModify: false,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Day } from "@/types/study";
+import { Day } from "@/util/types/study";
 
 
 type Props = {

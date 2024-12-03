@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Word from "./Word";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispath, Rootstate } from "@/app/store";
-import { fetchWord } from "@/redux/wordData";
+import { fetchWord } from "@/util/redux/wordData";
 
 type Props = {
   day: string

@@ -1,4 +1,4 @@
-import Login from "@/layout/login";
+import Login from "@/widget/login";
 
 export default function layoutLogin() {
   return (

@@ -1,8 +1,8 @@
-import { client } from "@/api/api";
+import { client } from "@/util/api/api";
 import store, { AppDispath } from "@/app/store";
-import { useAppSelector } from "@/hook/useAppSelector";
-import { createToggle } from "@/redux/modalReducer"
-import { fetchWord } from "@/redux/wordData";
+import { useAppSelector } from "@/util/hook/useAppSelector";
+import { createToggle } from "@/util/redux/modalReducer"
+import { fetchWord } from "@/util/redux/wordData";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import { useDispatch } from "react-redux"
@@ -23,7 +23,7 @@ export default function CreateWork() {
       id: `${Date.now()}`,
       kor: kor.current?.value,
       eng: eng.current?.value,
-      day: day.current?.value,
+      dayValue: day.current?.value,
       isDone: false,
     }
     client.post('/words', params)
@@ -54,9 +54,9 @@ export default function CreateWork() {
           <div className="form-input mb-2">
             <label htmlFor="engName" className="w-10 inline-block">days</label>
             <select className="blodk border w-[calc(100%_-_40px)] mt-2" ref={day}>
-              {days.map((day => (
+              {days.map(day => (
                 <option key={day.id} value={day.day}>{day.day} 일차</option>
-              )))}
+              ))}
             </select>
           </div>
         </div>

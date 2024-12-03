@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { client } from "@/api/api";
-import { WordType } from "@/types/study";
+import { client } from "@/util/api/api";
+import { WordType } from "@/util/types/study";
 
 
 interface initialStateType {

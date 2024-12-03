@@ -1,12 +1,11 @@
-import modalReducer from "@/redux/modalReducer";
-import wordData from "@/redux/wordData";
-import getDays from "@/redux/DayData";
+import { modalReducer, wordData, getDays, rdPosts } from "@/util/redux";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 const rootReducer = combineReducers({
   modalReducer,
   wordData,
   getDays,
+  rdPosts,
 })
 
 const store = configureStore({

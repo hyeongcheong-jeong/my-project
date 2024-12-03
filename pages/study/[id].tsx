@@ -1,9 +1,9 @@
 "use client"
 import { AppDispath } from "@/app/store";
 import { DayList, WordList, Modify, CreateWork } from "@/components"
-import { useAppSelector } from "@/hook/useAppSelector";//커스텀 useSelector 훅 지정
-import { getDays } from "@/redux/DayData";
-import { createToggle } from "@/redux/modalReducer";
+import { useAppSelector } from "@/util/hook/useAppSelector";//커스텀 useSelector 훅 지정
+import { getDays } from "@/util/redux/DayData";
+import { createToggle } from "@/util/redux/modalReducer";
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { useEffect } from "react";

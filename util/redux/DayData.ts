@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Day } from "@/types/study";
-import { client } from "@/api/api";
+import { Day } from "@/util/types/study";
+import { client } from "@/util/api/api";
 
 export const getDays = createAsyncThunk('daysData/getDays', async() => {
   try {
