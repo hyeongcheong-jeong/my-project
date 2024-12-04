@@ -28,3 +28,9 @@ export type Card = { // 게시물 목록
   limit: number,
   posts: PostType 
 }
+
+export type Menu = { // 하단 메뉴 타입
+  menu: string,
+  url: string,
+  isCurrent: boolean,
+}
