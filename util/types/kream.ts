@@ -6,6 +6,12 @@ export type Comments = {// 커멘트 타입
   like_count: number,
 }
 
+export type ImagesFileType = {
+  file_path: string,
+  id: string,
+  uploaded_at: string,
+  uploader_id: string,
+}
 
 export type PostType = {// 게시물 목록/ 상세 타입 정의
   id: string,
@@ -19,18 +25,37 @@ export type PostType = {// 게시물 목록/ 상세 타입 정의
   like_count: number,
   like_user: string[],
   tags: string[],
-  files: string[],
+  files: ImagesFileType[],
   comments?: Comments[],
-}
-
-export type Card = { // 게시물 목록
-  page: number,
-  limit: number,
-  posts: PostType 
 }
 
 export type Menu = { // 하단 메뉴 타입
   menu: string,
   url: string,
   isCurrent: boolean,
+}
+
+export type paramsType = {
+  page?: number,
+  limit?: number,
+  sortBy?: string,
+  email?: string,
+  password?: string,
+}
+
+export type initialPostType = {
+  isLoading: boolean,
+  errorMsg: string,
+  posts: PostType[],
+}
+
+export type likeType = {
+  message: string,
+  like_count: number,
+  like_users: string[]
+}
+
+export type userType = {
+  id: string,
+  email: string,
 }

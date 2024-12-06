@@ -1,5 +1,5 @@
 "use client"
-import { menu } from "@/entitiy/menu"
+import { menu } from "@/entitiy"
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -26,7 +26,7 @@ export default function FixedMenu() {
   return (
     <div className="flex justify-around w-full fixed bottom-0 left-0 z-50">
       {fixedMenu.map((menu, index) => (
-        <Link key={menu.menu} href={menu.url} className="flex items-center flex-col min-w-10">
+        <Link key={menu.menu} href={menu.url} className="flex items-center flex-col min-w-10 text-sm">
           <Image src={`/icon/menu-icon-${menu.menu}-${menu.isCurrent ? 'on' : 'off'}.svg`} width={index === 2 ? '32' : '24'} height="24" alt="" className="mb-2" />
           {menu.menu}
         </Link>

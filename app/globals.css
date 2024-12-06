@@ -50,6 +50,9 @@
     border: 1px solid #ccc;
     padding: 8px 12px;
   }
+  button {
+    cursor: pointer;
+  }
 }
 
 @layer components {}

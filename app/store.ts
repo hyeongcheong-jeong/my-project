@@ -1,10 +1,8 @@
-import { modalReducer, wordData, getDays, rdPosts } from "@/util/redux";
+import { authUserInfo, rdPosts } from "@/features";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 const rootReducer = combineReducers({
-  modalReducer,
-  wordData,
-  getDays,
+  authUserInfo,
   rdPosts,
 })
 

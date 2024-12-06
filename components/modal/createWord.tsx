@@ -1,6 +1,6 @@
 import { client } from "@/util/api/api";
 import store, { AppDispath } from "@/app/store";
-import { useAppSelector } from "@/util/hook/useAppSelector";
+import { useAppSelector } from "@/util/hook";
 import { createToggle } from "@/util/redux/modalReducer"
 import { fetchWord } from "@/util/redux/wordData";
 import { useRouter } from "next/navigation";

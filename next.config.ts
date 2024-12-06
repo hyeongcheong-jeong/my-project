@@ -7,10 +7,18 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'http://api4adc.cafe24app.com/:path*'
+        destination: `${process.env.NEXT_PUBLIC_KREAM_API}:path*`
       },
     ];
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "file-drive.storage.googleapis.com"
+      }
+    ]
+  }
 };
 
 export default nextConfig;

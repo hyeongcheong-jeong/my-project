@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { cva } from "class-variance-authority";
+import ImageCom from "./ImageCom";
 
 type ButtonVariantsProps = {
   intent?: "primary" | "secondary" | "default",
@@ -7,9 +8,10 @@ type ButtonVariantsProps = {
 }
 
 type ButtonProps = ButtonVariantsProps & ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: ReactNode,
-  type?: 'button' | 'submit',
+  children?: ReactNode,
+  btnType?: 'button' | 'like',
   customClass?: string,
+  like?: boolean,
 }
 type ButtonVariantsFunction = (props: ButtonVariantsProps) => string;
 
@@ -41,18 +43,19 @@ export default function Button({
   intent,
   size,
   children,
-  type,
+  btnType,
   customClass,
+  like,
   ...props
 }: ButtonProps) {
   return (
     <>
       <button
-        type={type || 'button'}
-        className={`${ButtonVariants({ intent, size })} ${customClass}`}
+        type="button"
+        className={btnType === 'like' ? '' : `${ButtonVariants({ intent, size })} ${customClass}`}
         {...props}
       >
-      {children}
+      {btnType === 'like' ? <ImageCom imgSrc={`/icon/ico-like-${like ? 'on' : 'off'}.png`} alt="like" width={24} height={24} /> : children}
       </button>
     </>
   )

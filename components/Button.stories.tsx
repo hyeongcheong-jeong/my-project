@@ -14,7 +14,14 @@ export const Default = {
     intent: 'default',
     size: 'l',
     children: '버튼',
-    type: '',
+    btnType: 'button',
     customClass: '',
+    like: false,
   },
 };
+export const Like = {
+  args: {
+    ...Default.args,
+    btnType: 'like',
+  }
+}

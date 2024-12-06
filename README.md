@@ -36,3 +36,22 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 npm init @eslint/config
+
+
+코딩 인벤션 목록, 블록구문, 함수, action 타입 정의 (접두어(action)중간: 대상(좋아요, 실어요))
+
+변수, 함수, 인스턴스: 케멀케이스로 작성
+
+함수명 작성 동사 + 명사
+
+class, constructor
+
+액션 타입 정의
+
+인티티 타입 정의
+
+css 사용 (커스텀.css)
+
+
+
+
